@@ -6,7 +6,8 @@
     "theme_axes": "light / roman-serif / chromatic-terracotta",
     "vibe": "Apple precision, Claude warmth, academic restraint",
     "enrichment": "none",
-    "brief": "Max Wang academic homepage · remove module frames"
+    "knob_deltas": "headings=single-title / entries=01-indexed / education=structured-row",
+    "brief": "Max Wang academic homepage · frameless modules with unified headings and numbering"
   },
   {
     "date": "2026-08-29",

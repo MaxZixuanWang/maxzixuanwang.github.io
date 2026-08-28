@@ -1,5 +1,5 @@
-/* Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V4 */
-/* Hallmark · macrostructure: Long Document · section knobs: flow=continuous, divider=hairline, cards=none
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V4 */
+/* Hallmark · macrostructure: Long Document · section knobs: flow=continuous, headings=single-title, entries=01-indexed, cards=none
  * genre: editorial
  * theme: custom · vibe: "Apple precision, Claude warmth, academic restraint" · paper: oklch(92.5% 0.022 74) · accent: oklch(59% 0.139 41)
  * display: roman serif · body: system grotesk · axes: light / roman-serif / chromatic-terracotta
@@ -301,11 +301,45 @@ section {
   margin-block-start: var(--space-4);
 }
 
-.about-content h3 {
-  margin-block: var(--space-8) var(--space-3);
+.about-content h2 {
+  margin-block: var(--space-8) var(--space-4);
+  padding-block-start: var(--space-6);
+  border-block-start: var(--rule-thin) solid var(--color-rule);
   color: var(--color-ink);
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
   line-height: var(--leading-heading);
+}
+
+.about-content h2 + p {
+  padding: var(--space-4) 0 var(--space-2) var(--space-4);
+  border-inline-start: var(--rule-focus) solid var(--color-accent);
+  color: var(--color-ink);
+}
+
+.about-content h2 + p strong {
+  display: block;
+  color: var(--color-ink);
+  font-size: var(--text-md);
+  line-height: var(--leading-heading);
+}
+
+.about-content h2 + p + p {
+  margin-block-start: 0;
+  padding: 0 0 var(--space-1) var(--space-4);
+  border-inline-start: var(--rule-focus) solid var(--color-accent);
+  color: var(--color-ink-raised);
+  font-size: var(--text-base);
+  line-height: var(--leading-compact);
+}
+
+.about-content h2 + p + p + p {
+  margin-block-start: 0;
+  padding: 0 0 var(--space-4) var(--space-4);
+  border-inline-start: var(--rule-focus) solid var(--color-accent);
+  color: var(--color-ink-muted);
+  font-family: var(--font-utility);
+  font-size: var(--text-sm);
+  font-variant-numeric: tabular-nums;
 }
 
 .about-content ul {
@@ -340,9 +374,8 @@ section {
 }
 
 .section-heading {
-  display: grid;
-  align-content: start;
-  gap: var(--space-2);
+  display: block;
+  align-self: start;
   min-inline-size: 0;
   padding-inline-start: var(--space-4);
   border-inline-start: var(--space-1) solid var(--color-accent);
@@ -350,7 +383,7 @@ section {
 
 .section-heading h2 {
   color: var(--color-ink);
-  font-size: clamp(var(--text-2xl), 8vw, var(--text-3xl));
+  font-size: clamp(var(--text-xl), 6vw, var(--text-2xl));
   line-height: var(--leading-heading);
 }
 
@@ -372,10 +405,6 @@ section {
   list-style: none;
 }
 
-.activity-list > ol {
-  padding-inline-start: var(--space-6);
-}
-
 .entry-list li,
 .activity-list li,
 .compact-content li {
@@ -384,26 +413,61 @@ section {
 }
 
 .entry-list > ul > li,
-.activity-list > ol > li {
+.activity-list > ol > li,
+.numbered-list > ul > li,
+.numbered-list > ol > li {
   padding-block: var(--space-5);
   border-block-start: var(--rule-thin) solid var(--color-rule);
 }
 
 .entry-list > ul > li:first-child,
-.activity-list > ol > li:first-child {
+.activity-list > ol > li:first-child,
+.numbered-list > ul > li:first-child,
+.numbered-list > ol > li:first-child {
   padding-block-start: 0;
   border-block-start: 0;
 }
 
 .entry-list > ul > li:last-child,
-.activity-list > ol > li:last-child {
+.activity-list > ol > li:last-child,
+.numbered-list > ul > li:last-child,
+.numbered-list > ol > li:last-child {
   padding-block-end: 0;
 }
 
-.activity-list li::marker {
+.numbered-list > ul,
+.numbered-list > ol {
+  counter-reset: section-entry;
+  padding: 0;
+  list-style: none;
+}
+
+.numbered-list > ul > li,
+.numbered-list > ol > li {
+  --entry-number-top: var(--space-5);
+  position: relative;
+  counter-increment: section-entry;
+  padding-inline-start: var(--space-12);
+}
+
+.numbered-list > ul > li:first-child,
+.numbered-list > ol > li:first-child {
+  --entry-number-top: 0;
+}
+
+.numbered-list > ul > li::before,
+.numbered-list > ol > li::before {
+  position: absolute;
+  inset-block-start: var(--entry-number-top);
+  inset-inline-start: 0;
   color: var(--color-accent-deep);
-  font-family: var(--font-display);
+  content: counter(section-entry, decimal-leading-zero);
+  font-family: var(--font-utility);
+  font-size: var(--text-sm);
   font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: var(--tracking-label);
+  line-height: var(--leading-body);
 }
 
 .activity-list p {
@@ -437,20 +501,6 @@ section {
 
 .compact-sections > div + div {
   border-block-start-color: var(--color-rule);
-}
-
-.compact-sections .section-label {
-  margin-block-end: var(--space-4);
-  color: var(--color-ink);
-  font-family: var(--font-display);
-  font-size: var(--text-lg);
-  letter-spacing: var(--tracking-tight);
-  padding-inline-start: var(--space-4);
-  border-inline-start: var(--space-1) solid var(--color-accent);
-}
-
-.compact-content li + li {
-  margin-block-start: var(--space-3);
 }
 
 .site-footer {
@@ -579,7 +629,7 @@ section {
   }
 
   .section-heading h2 {
-    font-size: var(--text-3xl);
+    font-size: var(--text-2xl);
   }
 
   .compact-sections > div {
