@@ -1,1 +1,1 @@
-- No publications listed yet.
+- **HARMONY: Passive Fins Everywhere - A Net-Zero Passive Retrofit Framework.** Zixuan Wang, Yinan Liu, and Yixiao Wang. 2026 Interdisciplinary Contest in Modeling, Problem E. Meritorious Winner. [Paper](/files/harmony-passive-fins-everywhere.pdf) | [Certificate](/files/2026-icm-meritorious-winner-certificate.pdf)

@@ -339,6 +339,14 @@ a:focus-visible {
   vertical-align: top;
 }
 
+.publication-list strong {
+  display: inline;
+  width: auto;
+  color: var(--text);
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .entry-list li::marker {
   color: var(--muted);
 }
