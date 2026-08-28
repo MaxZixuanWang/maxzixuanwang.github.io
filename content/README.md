@@ -15,7 +15,7 @@
 
 - `about.md`：个人介绍和教育经历。
 - `contact.md`：左侧资料栏中的联系邮箱。
-- `research.md`：研究方向。
+- `activities.md`：交流项目、课外活动和证书。
 - `news.md`：最新动态。
 - `projects.md`：项目经历。
 - `experience.md`：实习或工作经历。
@@ -49,12 +49,12 @@ I am interested in AI security and trustworthy machine learning.
 - **Paper Title.** Max Wang, Coauthor Name. Conference, 2026. [Paper](https://example.com)
 ```
 
-添加研究方向时，每一项保留“标题、空行、缩进说明”的结构：
+添加活动时，每一项保留“标题、空行、缩进说明”的结构：
 
 ```md
-1. **Research Direction**
+1. **Activity Name**
 
-   A short description of this research direction.
+   A short description of this activity.
 ```
 
 ## 不要放进仓库的内容
