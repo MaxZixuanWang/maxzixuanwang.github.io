@@ -1,0 +1,1 @@
+- **Product Testing and Maintenance Intern, Chuanqi Technology (Beijing) Co., Ltd.** July - September 2025 and January - March 2026. Participated in black-box and white-box product testing, documented issues and testing feedback, supported equipment commissioning and maintenance at customer sites, and used Dewetron OXYGEN for data acquisition and basic analysis.

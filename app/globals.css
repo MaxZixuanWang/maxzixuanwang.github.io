@@ -188,6 +188,21 @@ a:focus-visible {
   color: var(--accent);
 }
 
+.profile-contact p {
+  margin: 0;
+}
+
+.profile-contact p + p {
+  margin-top: 6px;
+}
+
+.profile-contact a {
+  display: block;
+  overflow-wrap: anywhere;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
 .profile-main {
   padding-top: 4px;
 }
@@ -362,7 +377,7 @@ a:focus-visible {
 .compact-sections > div {
   display: grid;
   grid-template-columns: 180px 1fr;
-  align-items: center;
+  align-items: start;
   padding-bottom: 20px;
   border-bottom: 1px solid var(--line);
 }
