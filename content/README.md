@@ -14,11 +14,13 @@
 ## 各文件负责什么
 
 - `about.md`：个人介绍和教育经历。
+- `contact.md`：左侧资料栏中的联系邮箱。
 - `research.md`：研究方向。
 - `news.md`：最新动态。
+- `projects.md`：项目经历。
+- `experience.md`：实习或工作经历。
 - `publications.md`：论文、预印本或研究项目。
 - `honors.md`：荣誉与奖项。
-- `service.md`：审稿、助教、志愿服务等学术服务。
 
 ## 常用格式
 

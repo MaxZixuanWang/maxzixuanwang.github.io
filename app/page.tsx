@@ -11,11 +11,13 @@ function readContent(filename: string) {
 
 const content = {
   about: readContent("about.md"),
+  contact: readContent("contact.md"),
   research: readContent("research.md"),
   news: readContent("news.md"),
+  projects: readContent("projects.md"),
+  experience: readContent("experience.md"),
   publications: readContent("publications.md"),
   honors: readContent("honors.md"),
-  service: readContent("service.md"),
 };
 
 function EditableContent({
@@ -53,6 +55,8 @@ export default function Home() {
           <nav className="site-nav" aria-label="Primary navigation">
             <a href="#about">About</a>
             <a href="#research">Research</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
             <a href="#news">News</a>
             <a href="#publications">Publications</a>
           </nav>
@@ -102,6 +106,14 @@ export default function Home() {
                   </a>
                 </dd>
               </div>
+              <div>
+                <dt>Email</dt>
+                <dd>
+                  <EditableContent className="profile-contact">
+                    {content.contact}
+                  </EditableContent>
+                </dd>
+              </div>
             </dl>
           </aside>
 
@@ -144,6 +156,18 @@ export default function Home() {
           </EditableContent>
         </section>
 
+        <section className="content-section" id="projects">
+          <header className="section-heading">
+            <p className="section-label">Projects</p>
+            <h2>Selected Projects</h2>
+          </header>
+          <EditableContent
+            className="editable-content entry-list publication-list"
+          >
+            {content.projects}
+          </EditableContent>
+        </section>
+
         <section className="content-section" id="news">
           <header className="section-heading">
             <p className="section-label">News</p>
@@ -169,7 +193,7 @@ export default function Home() {
         </section>
 
         <section className="compact-sections" aria-label="Additional academic information">
-          <div>
+          <div id="honors">
             <p className="section-label">Honors &amp; Awards</p>
             <EditableContent
               className="editable-content compact-content"
@@ -177,12 +201,12 @@ export default function Home() {
               {content.honors}
             </EditableContent>
           </div>
-          <div>
-            <p className="section-label">Academic Service</p>
+          <div id="experience">
+            <p className="section-label">Experience</p>
             <EditableContent
               className="editable-content compact-content"
             >
-              {content.service}
+              {content.experience}
             </EditableContent>
           </div>
         </section>
