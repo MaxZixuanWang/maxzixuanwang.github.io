@@ -1,22 +1,46 @@
+import fs from "node:fs";
+import path from "node:path";
 import Image from "next/image";
+import ReactMarkdown from "react-markdown";
 
-const researchInterests = [
-  {
-    title: "Retrieval-Augmented Generation Security",
-    description:
-      "Security and reliability questions in retrieval-augmented systems.",
-  },
-  {
-    title: "AI and Data Security",
-    description:
-      "Threats, safeguards, and trustworthy use of data in modern AI systems.",
-  },
-  {
-    title: "Reproducible Evaluation",
-    description:
-      "Careful experimental protocols and results that can be independently checked.",
-  },
-];
+const contentDirectory = path.join(process.cwd(), "content");
+
+function readContent(filename: string) {
+  return fs.readFileSync(path.join(contentDirectory, filename), "utf8").trim();
+}
+
+const content = {
+  about: readContent("about.md"),
+  research: readContent("research.md"),
+  news: readContent("news.md"),
+  publications: readContent("publications.md"),
+  honors: readContent("honors.md"),
+  service: readContent("service.md"),
+};
+
+function EditableContent({
+  children,
+  className,
+}: {
+  children: string;
+  className: string;
+}) {
+  return (
+    <div className={className}>
+      <ReactMarkdown
+        components={{
+          a: ({ children: linkText, href }) => (
+            <a href={href} target="_blank" rel="noreferrer">
+              {linkText}
+            </a>
+          ),
+        }}
+      >
+        {children}
+      </ReactMarkdown>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
@@ -84,14 +108,11 @@ export default function Home() {
           <article className="profile-main">
             <p className="section-label">About</p>
             <h1>Max Wang</h1>
-            <p className="lead">
-              I am interested in artificial intelligence and data security,
-              with a current focus on the security of retrieval-augmented
-              systems.
-            </p>
-            <p className="about-note">
-              Education and affiliation information will be added here later.
-            </p>
+            <EditableContent
+              className="editable-content about-content"
+            >
+              {content.about}
+            </EditableContent>
             <div className="text-links" aria-label="Profile links">
               <a
                 href="https://github.com/MaxZixuanWang"
@@ -116,15 +137,11 @@ export default function Home() {
             <p className="section-label">Research</p>
             <h2>Research Interests</h2>
           </header>
-          <div className="research-list">
-            {researchInterests.map((interest, index) => (
-              <article className="research-item" key={interest.title}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <h3>{interest.title}</h3>
-                <p>{interest.description}</p>
-              </article>
-            ))}
-          </div>
+          <EditableContent
+            className="editable-content research-list"
+          >
+            {content.research}
+          </EditableContent>
         </section>
 
         <section className="content-section" id="news">
@@ -132,10 +149,11 @@ export default function Home() {
             <p className="section-label">News</p>
             <h2>Updates</h2>
           </header>
-          <div className="empty-line">
-            <time>2026</time>
-            <p>No updates yet.</p>
-          </div>
+          <EditableContent
+            className="editable-content entry-list news-list"
+          >
+            {content.news}
+          </EditableContent>
         </section>
 
         <section className="content-section" id="publications">
@@ -143,20 +161,29 @@ export default function Home() {
             <p className="section-label">Publications</p>
             <h2>Selected Publications</h2>
           </header>
-          <div className="empty-line">
-            <span>—</span>
-            <p>No publications listed yet.</p>
-          </div>
+          <EditableContent
+            className="editable-content entry-list publication-list"
+          >
+            {content.publications}
+          </EditableContent>
         </section>
 
         <section className="compact-sections" aria-label="Additional academic information">
           <div>
             <p className="section-label">Honors &amp; Awards</p>
-            <p className="compact-empty">—</p>
+            <EditableContent
+              className="editable-content compact-content"
+            >
+              {content.honors}
+            </EditableContent>
           </div>
           <div>
             <p className="section-label">Academic Service</p>
-            <p className="compact-empty">—</p>
+            <EditableContent
+              className="editable-content compact-content"
+            >
+              {content.service}
+            </EditableContent>
           </div>
         </section>
       </main>

@@ -10,6 +10,19 @@
 - 手机、平板和电脑自适应布局
 - GitHub Pages 自动发布配置
 
+## 最简单的修改方式
+
+日常更新只需要编辑 [`content`](./content/) 文件夹里的 Markdown 文档：
+
+- `about.md`：个人介绍与教育经历
+- `research.md`：研究方向
+- `news.md`：最新动态
+- `publications.md`：论文与项目
+- `honors.md`：荣誉与奖项
+- `service.md`：学术服务
+
+不要修改 `app`、`.github`、`package.json` 或 `next.config.ts`。完整的中文操作步骤和可直接照抄的例子见 [`content/README.md`](./content/README.md)。
+
 ## 一、删除旧的 `MEMORY.md` 仓库
 
 删除仓库不可恢复。先确认仓库里没有需要保留的文件，然后：
