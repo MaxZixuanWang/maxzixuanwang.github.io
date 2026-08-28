@@ -1,0 +1,19 @@
+{
+  "scanned_at": "2026-08-28",
+  "framework": {
+    "name": "Next.js",
+    "version": "16.3.3",
+    "router": "app"
+  },
+  "font_stack": {
+    "display_and_body": "Iowan Old Style, Palatino Linotype, Book Antiqua, Palatino, Georgia, serif",
+    "utility": "Arial, Helvetica, sans-serif"
+  },
+  "palette": {
+    "source": "app/globals.css",
+    "format": "hex and rgba custom properties"
+  },
+  "motion": "motion-cut",
+  "spacing": "hand-authored values without a shared token scale",
+  "design_md": false
+}
