@@ -54,11 +54,11 @@ export default function Home() {
           </a>
           <nav className="site-nav" aria-label="Primary navigation">
             <a href="#about">About</a>
-            <a href="#activities">Activities</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
             <a href="#news">News</a>
+            <a href="#projects">Projects</a>
             <a href="#publications">Publications</a>
+            <a href="#activities">Activities</a>
+            <a href="#experience">Experience</a>
           </nav>
           <a
             className="github-link"
@@ -144,15 +144,15 @@ export default function Home() {
           </article>
         </section>
 
-        <section className="content-section" id="activities">
+        <section className="content-section" id="news">
           <header className="section-heading">
-            <p className="section-label">Activities</p>
-            <h2>Selected Activities</h2>
+            <p className="section-label">News</p>
+            <h2>Updates</h2>
           </header>
           <EditableContent
-            className="editable-content activity-list"
+            className="editable-content entry-list news-list"
           >
-            {content.activities}
+            {content.news}
           </EditableContent>
         </section>
 
@@ -168,18 +168,6 @@ export default function Home() {
           </EditableContent>
         </section>
 
-        <section className="content-section" id="news">
-          <header className="section-heading">
-            <p className="section-label">News</p>
-            <h2>Updates</h2>
-          </header>
-          <EditableContent
-            className="editable-content entry-list news-list"
-          >
-            {content.news}
-          </EditableContent>
-        </section>
-
         <section className="content-section" id="publications">
           <header className="section-heading">
             <p className="section-label">Publications</p>
@@ -189,6 +177,18 @@ export default function Home() {
             className="editable-content entry-list publication-list"
           >
             {content.publications}
+          </EditableContent>
+        </section>
+
+        <section className="content-section" id="activities">
+          <header className="section-heading">
+            <p className="section-label">Activities</p>
+            <h2>Selected Activities</h2>
+          </header>
+          <EditableContent
+            className="editable-content activity-list"
+          >
+            {content.activities}
           </EditableContent>
         </section>
 
