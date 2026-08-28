@@ -1,1 +1,1 @@
-_No honors listed yet._
+- **2026 ICM Meritorious Winner** - Problem E, Team 2604548. [Certificate](/files/2026-icm-meritorious-winner-certificate.pdf)
