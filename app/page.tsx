@@ -58,6 +58,7 @@ export default function Home() {
             <a href="#projects">Projects</a>
             <a href="#publications">Publications</a>
             <a href="#activities">Activities</a>
+            <a href="#honors">Honors &amp; Awards</a>
             <a href="#experience">Experience</a>
           </nav>
           <a
