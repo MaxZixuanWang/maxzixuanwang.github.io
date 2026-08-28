@@ -1,4 +1,4 @@
-- **2026 ICM Meritorious Winner** - Problem E, Team 2604548; top 6.67% globally. [Certificate](/files/2026-icm-meritorious-winner-certificate.pdf)
+- **2026 ICM Meritorious Winner** - top 6.67% globally. [Certificate](/files/2026-icm-meritorious-winner-certificate.pdf)
 - **Full Scholarship** - University College Dublin 2026 Summer Exchange Programme.
 - **Outstanding Student** - Beijing University of Technology.
 - **Bronze Award** - Beijing University of Technology Student Innovation and Entrepreneurship Competition, for SmartCalendar.
