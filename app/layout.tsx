@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./hallmark.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://maxzixuanwang.github.io"),
