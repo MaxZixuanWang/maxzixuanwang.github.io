@@ -1,11 +1,14 @@
 :root {
-  --background: #fcfcfa;
-  --surface: #f5f5f1;
-  --text: #252525;
-  --muted: #6f706b;
-  --line: #deded8;
-  --accent: #176f85;
-  --accent-dark: #10576a;
+  --background: #fbfcff;
+  --surface: #f3f6fc;
+  --text: #202337;
+  --muted: #697087;
+  --line: #dfe4f0;
+  --accent: #3f6fbd;
+  --accent-dark: #2f5697;
+  --pink: #c66a99;
+  --pink-dark: #a94e7d;
+  --pink-soft: #fdebf4;
   color-scheme: light;
 }
 
@@ -20,7 +23,19 @@ html {
 
 body {
   margin: 0;
-  background: var(--background);
+  background:
+    radial-gradient(
+      ellipse 34rem 24rem at -8% 8%,
+      rgba(63, 111, 189, 0.1),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 30rem 22rem at 108% 14%,
+      rgba(198, 106, 153, 0.1),
+      transparent 70%
+    ),
+    var(--background);
+  background-attachment: fixed;
   color: var(--text);
   font-family:
     "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino,
@@ -36,7 +51,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--pink-dark);
 }
 
 a:focus-visible {
@@ -45,7 +60,7 @@ a:focus-visible {
 }
 
 ::selection {
-  background: #d8e8eb;
+  background: #f4dce9;
   color: var(--text);
 }
 
@@ -54,8 +69,9 @@ a:focus-visible {
   z-index: 10;
   top: 0;
   border-bottom: 1px solid var(--line);
-  background: rgba(252, 252, 250, 0.94);
+  background: rgba(251, 252, 255, 0.9);
   backdrop-filter: blur(12px);
+  box-shadow: 0 8px 28px rgba(63, 111, 189, 0.05);
 }
 
 .header-inner,
@@ -74,6 +90,7 @@ a:focus-visible {
 
 .site-name {
   width: max-content;
+  color: var(--accent-dark);
   font-size: 1.08rem;
   font-weight: 700;
 }
@@ -127,9 +144,12 @@ a:focus-visible {
   width: 136px;
   height: 136px;
   overflow: hidden;
-  border: 1px solid var(--line);
+  border: 2px solid #fff;
   border-radius: 50%;
   background: var(--surface);
+  box-shadow:
+    0 0 0 1px rgba(63, 111, 189, 0.32),
+    9px 9px 0 -2px var(--pink-soft);
 }
 
 .profile-image {
@@ -176,6 +196,16 @@ a:focus-visible {
   text-transform: uppercase;
 }
 
+.section-label {
+  color: var(--accent);
+}
+
+#projects .section-label,
+#activities .section-label,
+.compact-sections > div:first-child .section-label {
+  color: var(--pink-dark);
+}
+
 .profile-meta dd {
   margin: 4px 0 0;
   overflow-wrap: anywhere;
@@ -186,6 +216,16 @@ a:focus-visible {
 .text-links a,
 .editable-content a {
   color: var(--accent);
+}
+
+.editable-content a {
+  text-decoration: underline;
+  text-decoration-color: rgba(63, 111, 189, 0.3);
+  text-underline-offset: 3px;
+}
+
+.text-links a:nth-child(even) {
+  color: var(--pink-dark);
 }
 
 .profile-contact p {
@@ -250,9 +290,25 @@ a:focus-visible {
 }
 
 .content-section {
+  position: relative;
   padding: 72px 0 80px;
-  border-top: 1px solid var(--line);
   scroll-margin-top: 72px;
+}
+
+.content-section::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(63, 111, 189, 0.5),
+    var(--line) 34%,
+    var(--line) 66%,
+    rgba(198, 106, 153, 0.5)
+  );
+  content: "";
 }
 
 .section-heading {
@@ -268,6 +324,16 @@ a:focus-visible {
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1.25;
+}
+
+.section-heading h2::after {
+  display: block;
+  width: 48px;
+  height: 2px;
+  margin-top: 14px;
+  background: linear-gradient(90deg, var(--accent), var(--pink));
+  border-radius: 999px;
+  content: "";
 }
 
 .activity-list {
@@ -305,7 +371,7 @@ a:focus-visible {
 }
 
 .activity-list li > p:first-child {
-  color: var(--accent);
+  color: var(--pink-dark);
   margin: 0;
   font-size: 1.08rem;
   font-weight: 600;
@@ -354,6 +420,10 @@ a:focus-visible {
   vertical-align: top;
 }
 
+.news-list strong {
+  color: var(--accent-dark);
+}
+
 .publication-list strong {
   display: inline;
   width: auto;
@@ -372,6 +442,12 @@ a:focus-visible {
   gap: 64px;
   padding: 72px 0 96px;
   border-top: 1px solid var(--line);
+  background: linear-gradient(
+    105deg,
+    rgba(63, 111, 189, 0.025),
+    transparent 44%,
+    rgba(198, 106, 153, 0.03)
+  );
 }
 
 .compact-sections > div {
@@ -399,6 +475,12 @@ a:focus-visible {
 
 .site-footer {
   border-top: 1px solid var(--line);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 111, 189, 0.035),
+    transparent 48%,
+    rgba(198, 106, 153, 0.04)
+  );
   color: var(--muted);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
