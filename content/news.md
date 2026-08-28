@@ -1,2 +1,2 @@
 - **2026.04** SmartCalendar received a bronze award in the Beijing University of Technology Student Innovation and Entrepreneurship Competition.
-- **2026.02** Team 2604548 received a Meritorious Winner award in the 2026 Interdisciplinary Contest in Modeling.
+- **2026.02** We received a Meritorious Winner award in the 2026 Interdisciplinary Contest in Modeling.
