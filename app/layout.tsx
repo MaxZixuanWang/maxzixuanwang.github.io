@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://maxzixuanwang.github.io"),
   title: "Max Wang — Academic Homepage",
   description:
-    "Max Wang's personal academic homepage, research interests, and updates.",
+    "Max Wang's personal academic homepage, projects, activities, and updates.",
   openGraph: {
     title: "Max Wang — Academic Homepage",
     description:
-      "Personal academic homepage, research interests, and updates.",
+      "Personal academic homepage, projects, activities, and updates.",
     type: "website",
     url: "/",
   },
