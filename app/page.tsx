@@ -146,8 +146,7 @@ export default function Home() {
 
         <section className="content-section" id="news">
           <header className="section-heading">
-            <p className="section-label">News</p>
-            <h2>Updates</h2>
+            <h2>News</h2>
           </header>
           <EditableContent
             className="editable-content entry-list news-list"
@@ -158,11 +157,10 @@ export default function Home() {
 
         <section className="content-section" id="projects">
           <header className="section-heading">
-            <p className="section-label">Projects</p>
-            <h2>Selected Projects</h2>
+            <h2>Projects</h2>
           </header>
           <EditableContent
-            className="editable-content entry-list publication-list"
+            className="editable-content entry-list publication-list numbered-list"
           >
             {content.projects}
           </EditableContent>
@@ -170,11 +168,10 @@ export default function Home() {
 
         <section className="content-section" id="publications">
           <header className="section-heading">
-            <p className="section-label">Publications</p>
-            <h2>Selected Publications</h2>
+            <h2>Publications</h2>
           </header>
           <EditableContent
-            className="editable-content entry-list publication-list"
+            className="editable-content entry-list publication-list numbered-list"
           >
             {content.publications}
           </EditableContent>
@@ -182,11 +179,10 @@ export default function Home() {
 
         <section className="content-section" id="activities">
           <header className="section-heading">
-            <p className="section-label">Activities</p>
-            <h2>Selected Activities</h2>
+            <h2>Activities</h2>
           </header>
           <EditableContent
-            className="editable-content activity-list"
+            className="editable-content activity-list numbered-list"
           >
             {content.activities}
           </EditableContent>
@@ -194,17 +190,21 @@ export default function Home() {
 
         <section className="compact-sections" aria-label="Additional academic information">
           <div id="honors">
-            <p className="section-label">Honors &amp; Awards</p>
+            <header className="section-heading">
+              <h2>Honors &amp; Awards</h2>
+            </header>
             <EditableContent
-              className="editable-content compact-content"
+              className="editable-content compact-content numbered-list"
             >
               {content.honors}
             </EditableContent>
           </div>
           <div id="experience">
-            <p className="section-label">Experience</p>
+            <header className="section-heading">
+              <h2>Experience</h2>
+            </header>
             <EditableContent
-              className="editable-content compact-content"
+              className="editable-content compact-content numbered-list"
             >
               {content.experience}
             </EditableContent>

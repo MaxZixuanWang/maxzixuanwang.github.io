@@ -4,7 +4,10 @@ My current interests are AI security and RAG. I am still at the beginning of tha
 
 Welcome to contact me!
 
-### Education
+## Education
 
-**Beijing University of Technology - University College Dublin Joint Degree Programme** 
-- Undergraduate in Electronic Information Engineering, September 2025 - June 2029 (expected).
+**Beijing University of Technology - University College Dublin Joint Degree Programme**
+
+Undergraduate in Electronic Information Engineering,
+
+September 2025 - June 2029 (expected).
