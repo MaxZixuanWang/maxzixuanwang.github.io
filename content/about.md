@@ -1,6 +1,6 @@
 Hi! I am Zixuan (Max) Wang, an undergraduate in EIE at BDIC. This site is a working record of the projects I build and the research questions I am learning to pursue.
 
-My current interests are AI security and RAG. I am still at the beginning of that process. I am following Haiyang Yu in DMSlab now! 
+My current interests are AI security and RAG. I am still at the beginning of that process. I am following Haiyang Yu in DMSlab now.
 
 Welcome to contact me!
 
