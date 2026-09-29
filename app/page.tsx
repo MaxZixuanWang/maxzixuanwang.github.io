@@ -13,7 +13,6 @@ const content = {
   about: readContent("about.md"),
   contact: readContent("contact.md"),
   activities: readContent("activities.md"),
-  news: readContent("news.md"),
   projects: readContent("projects.md"),
   experience: readContent("experience.md"),
   publications: readContent("publications.md"),
@@ -54,7 +53,6 @@ export default function Home() {
           </a>
           <nav className="site-nav" aria-label="Primary navigation">
             <a href="#about">About</a>
-            <a href="#news">News</a>
             <a href="#projects">Projects</a>
             <a href="#publications">Publications</a>
             <a href="#activities">Activities</a>
@@ -143,17 +141,6 @@ export default function Home() {
               </a>
             </div>
           </article>
-        </section>
-
-        <section className="content-section" id="news">
-          <header className="section-heading">
-            <h2>News</h2>
-          </header>
-          <EditableContent
-            className="editable-content entry-list news-list"
-          >
-            {content.news}
-          </EditableContent>
         </section>
 
         <section className="content-section" id="projects">

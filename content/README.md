@@ -16,7 +16,6 @@
 - `about.md`：个人介绍和教育经历。
 - `contact.md`：左侧资料栏中的联系邮箱。
 - `activities.md`：交流项目、课外活动和证书。
-- `news.md`：最新动态。
 - `projects.md`：项目经历。
 - `experience.md`：实习或工作经历。
 - `publications.md`：论文、预印本或研究项目。
@@ -36,12 +35,7 @@ I am interested in AI security and trustworthy machine learning.
 [Paper](https://example.com/paper.pdf)
 ```
 
-添加 News，最新的一条放最上面：
-
-```md
-- **2026.08** Joined the XXX Lab as a research assistant.
-- **2026.06** Graduated from XXX University.
-```
+项目或论文的时间直接写在对应条目里。
 
 添加论文：
 
