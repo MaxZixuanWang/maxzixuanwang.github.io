@@ -35,18 +35,24 @@ I am interested in AI security and trustworthy machine learning.
 [Paper](https://example.com/paper.pdf)
 ```
 
-项目或论文的时间直接写在对应条目里。
+除教育经历外，日期单独写在条目标题下一行，用 `*日期*` 包住，并保留前面的缩进。页面会自动把日期排到条目右侧；手机上会显示在标题下方。
 
 添加论文：
 
 ```md
-- **Paper Title.** Max Wang, Coauthor Name. Conference, 2026. [Paper](https://example.com)
+- **Paper Title.**
+
+  *February 2026*
+
+  Zixuan Wang, Coauthor Name. Conference. [Paper](https://example.com)
 ```
 
 添加活动时，每一项保留“标题、空行、缩进说明”的结构：
 
 ```md
 1. **Activity Name**
+
+   *2026*
 
    A short description of this activity.
 ```

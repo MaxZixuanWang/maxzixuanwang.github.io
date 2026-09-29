@@ -49,7 +49,7 @@ export default function Home() {
       <header className="site-header">
         <div className="header-inner">
           <a className="site-name" href="#top">
-            Max Wong
+            Zixuan Wang (Max)
           </a>
           <nav className="site-nav" aria-label="Primary navigation">
             <a href="#about">About</a>
@@ -77,7 +77,7 @@ export default function Home() {
               <Image
                 className="profile-image"
                 src="/profile.jpg"
-                alt="Max Wong"
+                alt="Zixuan Wang (Max)"
                 width={800}
                 height={800}
                 priority
@@ -85,7 +85,7 @@ export default function Home() {
               />
             </div>
             <div className="profile-identity">
-              <h2>Max Wong</h2>
+              <h2>Zixuan Wang (Max)</h2>
               <p>@MaxZixuanWang</p>
             </div>
             <dl className="profile-meta">
@@ -118,7 +118,7 @@ export default function Home() {
 
           <article className="profile-main">
             <p className="section-label">About</p>
-            <h1>Max Wong</h1>
+            <h1>Zixuan Wang (Max)</h1>
             <EditableContent
               className="editable-content about-content"
             >
@@ -148,7 +148,7 @@ export default function Home() {
             <h2>Projects</h2>
           </header>
           <EditableContent
-            className="editable-content entry-list publication-list numbered-list"
+            className="editable-content entry-list publication-list numbered-list dated-list"
           >
             {content.projects}
           </EditableContent>
@@ -159,7 +159,7 @@ export default function Home() {
             <h2>Publications</h2>
           </header>
           <EditableContent
-            className="editable-content entry-list publication-list numbered-list"
+            className="editable-content entry-list publication-list numbered-list dated-list"
           >
             {content.publications}
           </EditableContent>
@@ -170,7 +170,7 @@ export default function Home() {
             <h2>Activities</h2>
           </header>
           <EditableContent
-            className="editable-content activity-list numbered-list"
+            className="editable-content activity-list numbered-list dated-list"
           >
             {content.activities}
           </EditableContent>
@@ -182,7 +182,7 @@ export default function Home() {
               <h2>Honors &amp; Awards</h2>
             </header>
             <EditableContent
-              className="editable-content compact-content numbered-list"
+              className="editable-content compact-content numbered-list dated-list"
             >
               {content.honors}
             </EditableContent>
@@ -192,7 +192,7 @@ export default function Home() {
               <h2>Experience</h2>
             </header>
             <EditableContent
-              className="editable-content compact-content numbered-list"
+              className="editable-content compact-content numbered-list dated-list"
             >
               {content.experience}
             </EditableContent>
@@ -202,7 +202,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <div className="footer-inner">
-          <p>© 2026 Max Wong</p>
+          <p>© 2026 Zixuan Wang (Max)</p>
           <p>Last updated August 2026</p>
           <a href="#top">Back to top ↑</a>
         </div>

@@ -479,6 +479,38 @@ section {
   margin-block-start: var(--space-3);
 }
 
+.dated-list {
+  max-inline-size: none;
+}
+
+.dated-list > :is(ul, ol) > li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  column-gap: var(--space-6);
+}
+
+.dated-list > :is(ul, ol) > li > p {
+  grid-column: 1;
+  margin: 0;
+}
+
+.dated-list > :is(ul, ol) > li > p + p {
+  margin-block-start: var(--space-2);
+}
+
+.dated-list > :is(ul, ol) > li > p:has(> em:only-child) {
+  grid-row: 2;
+  color: var(--color-ink-muted);
+  font-family: var(--font-utility);
+  font-size: var(--text-sm);
+  line-height: var(--leading-compact);
+  font-variant-numeric: tabular-nums;
+}
+
+.dated-list > :is(ul, ol) > li > p > em:only-child {
+  font-style: normal;
+}
+
 .editable-content strong {
   color: var(--color-ink);
   font-weight: 700;
@@ -640,6 +672,20 @@ section {
     grid-template-columns: minmax(12rem, 4fr) minmax(0, 8fr);
     gap: var(--space-16);
     padding-block: var(--space-16);
+  }
+}
+
+@media (min-width: 72rem) {
+  .dated-list > :is(ul, ol) > li {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 17rem);
+  }
+
+  .dated-list > :is(ul, ol) > li > p:has(> em:only-child) {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    margin-block-start: var(--space-1);
+    text-align: right;
   }
 }
 

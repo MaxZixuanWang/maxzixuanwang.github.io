@@ -1,4 +1,13 @@
-- **2026 ICM Meritorious Winner** - February 2026; top 6.67% globally.
-- **Full Scholarship** - University College Dublin 2026 Summer Exchange Programme.
+- **ICM Meritorious Winner** - top 6.67% globally.
+
+  *February 2026*
+
+- **Full Scholarship** - University College Dublin Summer Exchange Programme.
+
+  *Summer 2026*
+
 - **Outstanding Student** - Beijing University of Technology.
-- **Bronze Award** - Beijing University of Technology Student Innovation and Entrepreneurship Competition, for SmartCalendar (April 2026).
+
+- **Bronze Award** - Beijing University of Technology Student Innovation and Entrepreneurship Competition, for SmartCalendar.
+
+  *April 2026*

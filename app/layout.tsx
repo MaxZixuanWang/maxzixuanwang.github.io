@@ -3,11 +3,11 @@ import "./hallmark.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://maxzixuanwang.github.io"),
-  title: "Max Wong — Academic Homepage",
+  title: "Zixuan Wang (Max) — Academic Homepage",
   description:
-    "Max Wong's personal academic homepage, projects, publications, and activities.",
+    "Academic homepage of Zixuan Wang (Max): projects, publications, and activities.",
   openGraph: {
-    title: "Max Wong — Academic Homepage",
+    title: "Zixuan Wang (Max) — Academic Homepage",
     description:
       "Personal academic homepage, projects, publications, and activities.",
     type: "website",
