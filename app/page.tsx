@@ -49,7 +49,7 @@ export default function Home() {
       <header className="site-header">
         <div className="header-inner">
           <a className="site-name" href="#top">
-            Max Wang
+            Max Wong
           </a>
           <nav className="site-nav" aria-label="Primary navigation">
             <a href="#about">About</a>
@@ -77,7 +77,7 @@ export default function Home() {
               <Image
                 className="profile-image"
                 src="/profile.jpg"
-                alt="Max Wang"
+                alt="Max Wong"
                 width={800}
                 height={800}
                 priority
@@ -85,7 +85,7 @@ export default function Home() {
               />
             </div>
             <div className="profile-identity">
-              <h2>Max Wang</h2>
+              <h2>Max Wong</h2>
               <p>@MaxZixuanWang</p>
             </div>
             <dl className="profile-meta">
@@ -118,7 +118,7 @@ export default function Home() {
 
           <article className="profile-main">
             <p className="section-label">About</p>
-            <h1>Max Wang</h1>
+            <h1>Max Wong</h1>
             <EditableContent
               className="editable-content about-content"
             >
@@ -202,7 +202,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <div className="footer-inner">
-          <p>© 2026 Max Wang</p>
+          <p>© 2026 Max Wong</p>
           <p>Last updated August 2026</p>
           <a href="#top">Back to top ↑</a>
         </div>
