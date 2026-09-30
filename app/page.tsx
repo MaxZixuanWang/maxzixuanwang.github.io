@@ -106,6 +106,18 @@ export default function Home() {
                 </dd>
               </div>
               <div>
+                <dt>OpenReview</dt>
+                <dd>
+                  <a
+                    href="https://openreview.net/profile?id=%7EZixuan_Wang61"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Profile ↗
+                  </a>
+                </dd>
+              </div>
+              <div>
                 <dt>Email</dt>
                 <dd>
                   <EditableContent className="profile-contact">
