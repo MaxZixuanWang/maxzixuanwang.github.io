@@ -352,20 +352,6 @@ section {
   color: var(--color-accent);
 }
 
-.text-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3) var(--space-6);
-  margin-block-start: var(--space-8);
-}
-
-.text-links a {
-  color: var(--color-accent-deep);
-  font-weight: 700;
-  text-decoration: none;
-  border-block-end: var(--rule-focus) solid var(--color-accent);
-}
-
 .content-section {
   display: grid;
   gap: var(--space-6);
@@ -700,7 +686,6 @@ section {
   .site-name,
   .github-link,
   .site-nav a,
-  .text-links a,
   .footer-inner a {
     display: inline-flex;
     align-items: center;

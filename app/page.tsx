@@ -101,7 +101,7 @@ export default function Home() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    0009-0003-5070-775X
+                    ORCID ↗
                   </a>
                 </dd>
               </div>
@@ -124,22 +124,6 @@ export default function Home() {
             >
               {content.about}
             </EditableContent>
-            <div className="text-links" aria-label="Profile links">
-              <a
-                href="https://github.com/MaxZixuanWang"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub ↗
-              </a>
-              <a
-                href="https://orcid.org/0009-0003-5070-775X"
-                target="_blank"
-                rel="noreferrer"
-              >
-                ORCID ↗
-              </a>
-            </div>
           </article>
         </section>
 
