@@ -1,4 +1,4 @@
-- **ICM Meritorious Winner** - top 6.67% globally.
+- **ICM Meritorious Winner** - top 6.67% globally. [Certificate](/files/icm-meritorious-certificate.pdf)
 
   *February 2026*
 
