@@ -2,4 +2,4 @@
 
   *Jul–Aug 2025 · Jan–Feb 2026*
 
-  Tested products, reported issues, helped set up and maintain equipment at customer sites, and used Dewetron OXYGEN to collect and review data.
+  Tested products and used Dewetron OXYGEN to collect and review data.
