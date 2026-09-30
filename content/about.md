@@ -1,6 +1,6 @@
 I am Max, an undergraduate in EIE at BDIC. This site is a working record of the projects I build and the research questions I am learning to pursue.
 
-My current interests are AI security. I am still at the beginning of my research journey and am currently working with Dr. Haiyang Yu at DMSLab.
+My current interests are AI & Data Security. I am still at the beginning of my research journey and am currently working with Dr. Haiyang Yu at DMSLab.
 
 Feel free to contact me!
 
