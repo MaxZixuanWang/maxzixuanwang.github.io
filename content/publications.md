@@ -2,4 +2,4 @@
 
   *February 2026*
 
-  Zixuan Wang, Yixiao Wang, and Yinan Liu. Interdisciplinary Contest in Modeling, Problem E. Meritorious Winner. [Certificate](/files/icm-meritorious-certificate.pdf)
+  Authors: Zixuan Wang, Yixiao Wang, and Yinan Liu. Interdisciplinary Contest in Modeling, Problem E. Meritorious Winner. [Certificate](/files/icm-meritorious-certificate.pdf)
